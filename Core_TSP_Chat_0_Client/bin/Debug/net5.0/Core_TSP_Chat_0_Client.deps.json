@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Core_TSP_Chat_0_Client/1.0.0": {
+        "dependencies": {
+          "libHeader": "1.0.0"
+        },
+        "runtime": {
+          "Core_TSP_Chat_0_Client.dll": {}
+        }
+      },
+      "libHeader/1.0.0": {
+        "runtime": {
+          "libHeader.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Core_TSP_Chat_0_Client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "libHeader/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,12 @@
+D:\V\VisualStudioProjects\Core_TSP_Chat_0\libHeader\bin\Debug\net5.0\libHeader.deps.json
+D:\V\VisualStudioProjects\Core_TSP_Chat_0\libHeader\bin\Debug\net5.0\libHeader.dll
+D:\V\VisualStudioProjects\Core_TSP_Chat_0\libHeader\bin\Debug\net5.0\ref\libHeader.dll
+D:\V\VisualStudioProjects\Core_TSP_Chat_0\libHeader\bin\Debug\net5.0\libHeader.pdb
+D:\V\VisualStudioProjects\Core_TSP_Chat_0\libHeader\obj\Debug\net5.0\libHeader.GeneratedMSBuildEditorConfig.editorconfig
+D:\V\VisualStudioProjects\Core_TSP_Chat_0\libHeader\obj\Debug\net5.0\libHeader.AssemblyInfoInputs.cache
+D:\V\VisualStudioProjects\Core_TSP_Chat_0\libHeader\obj\Debug\net5.0\libHeader.AssemblyInfo.cs
+D:\V\VisualStudioProjects\Core_TSP_Chat_0\libHeader\obj\Debug\net5.0\libHeader.csproj.CoreCompileInputs.cache
+D:\V\VisualStudioProjects\Core_TSP_Chat_0\libHeader\obj\Debug\net5.0\libHeader.dll
+D:\V\VisualStudioProjects\Core_TSP_Chat_0\libHeader\obj\Debug\net5.0\ref\libHeader.dll
+D:\V\VisualStudioProjects\Core_TSP_Chat_0\libHeader\obj\Debug\net5.0\libHeader.pdb
+D:\V\VisualStudioProjects\Core_TSP_Chat_0\libHeader\obj\Debug\net5.0\libHeader.csproj.AssemblyReference.cache
