@@ -37,12 +37,12 @@ namespace libHeader
 
     enum TransferStatus {
         OK = 1,
-        Error
+        Error = 2
     }
     public class FileHeader
     {
         public string transferStatus { get; set; }
-        public int CRC32; // складываем все байты и последние 32 байта сохраняем в эту переменную
+        public int CRC16; // складываем все байты и последние 16 байта сохраняем в эту переменную
     }
 
 

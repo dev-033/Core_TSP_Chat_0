@@ -173,7 +173,23 @@ namespace Core_TSP_Chat_0_Client
 
                             break; 
                         }
-                    case "3": { break; }
+                    case "3": 
+                        {
+
+
+                            //пока тут для отладки
+
+                            FileHeader fh = new FileHeader();
+                            fh.CRC32 = (int)0xFFFFFFFF;
+                            string headerString = JsonSerializer.Serialize<FileHeader>(headerToSend);
+
+
+
+
+                            break; 
+                        }
+
+                        
 
                 }
 
@@ -312,25 +328,29 @@ namespace Core_TSP_Chat_0_Client
 
                     if (fileSize > TRANSFER_SIZE)
                     {
+                        //читаем из файла и передаем
                         Console.WriteLine($"{k} Размер файла: {infoFile.Length} | Осталось данных: {fileSize}");
                         array = new byte[TRANSFER_SIZE];
-                        fstream.Read(array, 0, TRANSFER_SIZE); // читаем в буфер из файла 1МБ
-                        stream.Write(array, 0, TRANSFER_SIZE); //передаем на сервер
-                        fileSize -= TRANSFER_SIZE; // вычитаем из общего размера файла то, что уже передали
+                        fstream.Read(array, 0, TRANSFER_SIZE); // читаем в буфер из файла 10МБ
+                        stream.Write(array, 0, TRANSFER_SIZE); //передаем
+                         
 
                         //принимаем от получателя [FileHeader]
-
+                        
 
 
                         //десериализируем [FileHeader]
 
+
+
                         //вычисляем CRC32
-                        int crc32_value = CRC32_calc(array, TRANSFER_SIZE);
+                        int crc16_value = CRC16_calc(array, TRANSFER_SIZE);
 
                         //сравнимаем CRC32
 
 
-
+                        // вычитаем из общего размера файла то, что уже передали
+                        fileSize -= TRANSFER_SIZE;
                         array = null;
                         nStep = false;
                     }
@@ -369,14 +389,14 @@ namespace Core_TSP_Chat_0_Client
 
 
 
-        public int CRC32_calc(byte[] data, int sizeData)
+        public int CRC16_calc(byte[] data, int sizeData)
         {
             long total_bytes = 0;
             for (int i = 0; i < sizeData; i++)
             {
                 total_bytes += data[i];
             }
-            int rezult = (int)(total_bytes & 0xFFFFFFFF);
+            int rezult = (int)(total_bytes & 0xFFFF);
             return rezult;
         }
 
@@ -413,6 +433,8 @@ namespace Core_TSP_Chat_0_Client
 
             return null;
         }
+
+
 
 
 
